@@ -18,7 +18,7 @@ if (process.env.NODE_ENV == 'production') {
 }
 
 // Connecting to the database
-mongoose.connect(database, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true }).then(() => {
+mongoose.connect(database, { useNewUrlParser: true, useUnifiedTopology: true }).then(() => {
     console.log("Successfully connected to the database");    
 }).catch(err => {
     console.log('Could not connect to the database. Exiting now...', err);
